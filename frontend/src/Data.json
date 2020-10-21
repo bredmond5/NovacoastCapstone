@@ -1,0 +1,361 @@
+{
+    "groups": [
+        {
+            "id": 1,
+            "name": "Microsoft",
+            "emails": "snadella@microsoft.com;john@microsoft.com;xbox@xbox.com"
+        },
+        {
+            "id": 2,
+            "name": "Apple",
+            "emails": "cooktim@apple.com;adamskatherine@apple.com;cueeddy@apple.com;federighicraig@apple.com"
+        },
+        {
+            "id": 3,
+            "name": "Sony",
+            "emails": "kenichiroyoshida@sony.com;hirokitotoki@playstation.com"
+        },
+        {
+            "id": 4,
+            "name": "Google",
+            "emails": "spichai@google.com;fharnold@gmail.com"
+        },
+        {
+            "id": 5,
+            "name": "Twitter",
+            "emails": "agrawalparag@twitter.com;jackdorsey@twitter.com;leslieberland@t.com"
+        },
+        {
+            "id": 6,
+            "name": "Amazon",
+            "emails": "jbezos@amazon.com;bolsavksy@amazon.com;ajassy@amazon.com;sreynolds@amazon.com;jwilke@amazon.com"
+        }
+    ],
+    "domains": [
+        {
+            "id": 1, 
+            "groupId": 1, 
+            "name": "microsoft.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": "2020-09-20T19:20:14", 
+            "numberOfScans": 3, 
+            "createdAt": "2020-09-19T18:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T08:00:00",
+            "recur": "weekly",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 2, 
+            "groupId": 1, 
+            "name": "xbox.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-20T19:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Chicago"
+        },
+        {
+            "id": 3, 
+            "groupId": 1, 
+            "name": "xbox360.com", 
+            "active": false, 
+            "lastEmailed": null, 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-19T19:32:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "monthly",
+            "tz": "America/Seattle"
+        },
+        {
+            "id": 4, 
+            "groupId": 2, 
+            "name": "apple.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": "2020-09-20T19:20:14", 
+            "numberOfScans": 7, 
+            "createdAt": "2020-09-19T18:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 5, 
+            "groupId": 2, 
+            "name": "store.apple.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-20T19:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 6, 
+            "groupId": 2, 
+            "name": "ipod.com", 
+            "active": false, 
+            "lastEmailed": null, 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-19T19:32:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 7, 
+            "groupId": 3, 
+            "name": "sony.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": "2020-09-20T19:20:14", 
+            "numberOfScans": 3, 
+            "createdAt": "2020-09-19T18:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 8, 
+            "groupId": 3, 
+            "name": "playstation.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-20T19:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 9, 
+            "groupId": 4, 
+            "name": "google.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": "2020-09-20T19:20:14", 
+            "numberOfScans": 4, 
+            "createdAt": "2020-09-19T18:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 10, 
+            "groupId": 4, 
+            "name": "gmail.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-20T19:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 11, 
+            "groupId": 4, 
+            "name": "googleplus.com", 
+            "active": false, 
+            "lastEmailed": null, 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-19T19:32:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 12, 
+            "groupId": 5, 
+            "name": "twitter.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": "2020-09-20T19:20:14", 
+            "numberOfScans": 11, 
+            "createdAt": "2020-09-19T18:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 13, 
+            "groupId": 6, 
+            "name": "amazon.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-20T19:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 14, 
+            "groupId": 6, 
+            "name": "smile.amazon.com", 
+            "active": true, 
+            "lastEmailed": null, 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-19T19:32:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 15, 
+            "groupId": 6, 
+            "name": "aws.com", 
+            "active": true, 
+            "lastEmailed": "2020-09-20T19:20:14", 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-20T19:20:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T15:00:00",
+            "recur": "daily",
+            "tz": "America/Los_Angeles"
+        },
+        {
+            "id": 16, 
+            "groupId": 6, 
+            "name": "amazonfresh.com", 
+            "active": false, 
+            "lastEmailed": null, 
+            "lastScanned": null, 
+            "numberOfScans": 0, 
+            "createdAt": "2020-09-19T19:32:14", 
+            "updatedAt": "2020-09-20T19:20:14",
+            "startAt": "2020-09-21T17:00:00",
+            "recur": "daily",
+            "tz": "America/Chicago"
+        }
+    ],
+    "lookalikes": [
+        {
+            "id": 1, 
+            "domainId": 1, 
+            "name": "micrsoft.com", 
+            "foundOn": "2020-09-20T23:10:59.121922", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-01T00:00:00", 
+            "ipAddress": "33.33.33.33"
+        },
+        {
+            "id": 2, 
+            "domainId": 1, 
+            "name": "microsft.com", 
+            "foundOn": "2020-09-20T10:10:59.004843", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-02T00:00:00", 
+            "ipAddress": "24.96.90.233"
+        },
+        {
+            "id": 3, 
+            "domainId": 1, 
+            "name": "microzoft.com", 
+            "foundOn": "2020-09-15T10:10:59.129124", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-03T00:00:00", 
+            "ipAddress": "342.3.423.552"
+        },
+        {
+            "id": 4, 
+            "domainId": 1, 
+            "name": "mircosoft.com", 
+            "foundOn": "2020-09-15T10:10:59.019833", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-04T00:00:00", 
+            "ipAddress": "124.663.77.32"
+        },
+        {
+            "id": 5, 
+            "domainId": 1, 
+            "name": "microsfot.com", 
+            "foundOn": "2020-09-15T10:10:59.358433", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-05T00:00:00", 
+            "ipAddress": "123.11.412.66"
+        },
+        {
+            "id": 6, 
+            "domainId": 1, 
+            "name": "micosoft.com", 
+            "foundOn": "2020-09-15T10:10:59.115236", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-06T00:00:00", 
+            "ipAddress": "246.247.843.11"
+        },
+        {
+            "id": 7, 
+            "domainId": 1, 
+            "name": "mocrosoft.com", 
+            "foundOn": "2020-09-16T10:10:59.937900", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-07T00:00:00", 
+            "ipAddress": "217.36.232.122"
+        },
+        {
+            "id": 8, 
+            "domainId": 1, 
+            "name": "microsoftt.com", 
+            "foundOn": "2020-09-16T10:10:59.214555", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-08T00:00:00", 
+            "ipAddress": "123.352.33.350"
+        },
+        {
+            "id": 9, 
+            "domainId": 1, 
+            "name": "mcirsoft.com", 
+            "foundOn": "2020-09-16T10:10:59.115704", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-09T00:00:00", 
+            "ipAddress": "342.52.66.35"
+        },
+        {
+            "id": 10, 
+            "domainId": 1, 
+            "name": "sicromoft.com", 
+            "foundOn": "2020-09-16T10:10:59.234234", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-10T00:00:00", 
+            "ipAddress": "223.352.333.279"
+        },
+        {
+            "id": 11, 
+            "domainId": 1, 
+            "name": "nicrosoft.com", 
+            "foundOn": "2020-09-16T10:10:59.215125", 
+            "updatedAt": "2020-09-18T14:33:49",
+            "creationDate": "2020-09-11T00:00:00", 
+            "ipAddress": "67.23.43.52"
+        }
+    ]
+}

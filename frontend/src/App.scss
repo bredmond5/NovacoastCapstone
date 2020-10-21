@@ -1,0 +1,132 @@
+
+
+.base-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    .sidebar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 5;
+        background-color: #333;
+        .logo {
+            padding: 10px 24px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            text-decoration: none;
+            > img {
+                width: 35px;
+                height: 28px;
+            }
+            > span {
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding-right: 7px;
+                line-height: 1.5em;
+            }
+        }
+        ul ul li:nth-child(1) div {
+            font-style: italic;
+        }
+    }
+    .main {
+        display: flex;
+        flex: 9999 0;
+        flex-flow: column nowrap;
+        padding-left: 45px;
+        padding-right: 45px;
+        min-height: 100vh;
+        > :nth-child(1) {
+            height: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        [data-baseweb="tag"] > span {
+            max-width: unset;
+        }
+        .dashboard {
+            > [data-baseweb="table-semantic"] {
+                // margin: 60px;
+            }
+        }
+        .details {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            a {
+                color: inherit;
+            }
+            h3 {
+                margin-bottom: 0.5em;
+            }
+            &.group {
+                .domains-table {
+                    .add-new-domain-row {
+                        &:not(.adding-form) {
+                            background-color: #eee;
+                            cursor: pointer;
+                            td {
+                                text-align: center;
+                            }
+                        }
+                        &.adding-form:hover {
+                            background-color: initial;
+                        }
+                        [data-baseweb="form-control-container"] {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+            &.domain {
+                [data-baseweb="breadcrumbs"] {
+                    ol {
+                        font-size: 2em;
+                        margin-block-start: 0.67em;
+                        margin-block-end: 0.67em;
+                        li {
+                            line-height: normal;
+                        }
+                    }
+                    a, span:nth-child(1) {
+                        font-size: 2em;
+                        font-weight: bold;
+                    }
+                    [data-baseweb="icon"] {
+                        width: 32px;
+                        height: 32px;
+                        vertical-align: super;
+                    }
+                    input {
+                        margin: 0px;
+                        font-size: 2em;
+                        font-weight: bold;
+                    }
+                }
+                .recurrence-info {
+                    [data-baseweb="tag"] {
+                        border-radius: 0px;
+                        margin-left: 0px;
+                    }
+                }
+                .recurrence-form {
+                    width: 400px;
+                }
+                .analysis-table {
+                    td {
+                        vertical-align: middle;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
