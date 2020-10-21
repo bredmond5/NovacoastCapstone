@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html style='width: 100; border-top-width: 3px; border-top-color: #FC9A19; border-top-style: solid; background-color: #ffffff; color: #000000; font-family: "Roboto", Helvetica, Arial, sans-serif; font-size: 12pt; margin: 0; padding: 0;'>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <title>Novacoast Domain Monitoring Service Notification</title>
+<style>
+body {
+width: 100; margin: 0; padding: 0; border-top: 3px solid #FC9A19; background-color: #ffffff; color: #000000; font-family: "Roboto", Helvetica, Arial, sans-serif; font-size: 12pt;
+}
+a:hover {
+color: #e2a543;
+}
+</style>
+</head>
+
+<body style='width: 100; border-top-width: 3px; border-top-color: #FC9A19; border-top-style: solid; color: #000000; font-family: "Roboto", Helvetica, Arial, sans-serif; font-size: 12pt; margin: 0; padding: 0;' bgcolor="#ffffff">
+  <div style="width: 600px; margin: 20px auto;">
+    <table style="width: 600px; margin: 20px auto;">
+      <tbody>
+        <tr style='font-family: "Raleway", Helvetica, Arial, sans-serif; vertical-align: center;'>
+          <td width="100"><img src="https://s3.amazonaws.com/nci-website/uploads/72dpi-novacoast-Simple_n.png" width="60"></td>
+          <td style="text-transform: uppercase; color: #5F6062; font-size: 14pt;">Domain Monitoring Service</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1 style='font-family: "Raleway", Helvetica, Arial, sans-serif;'>{{ new_lookalikes|length }} site{% if new_lookalikes|length > 1 %}s{% endif %} with domain name similar to
+      {{ domain.name }} found</h1>
+    <br>
+
+    <p>Within the last {{ scan_period }} hours, the following new lookalike domains have been found:</p>
+
+    {% for lookalike in new_lookalikes %}
+      <br>
+      <table style="vertical-align: center;">
+        <tbody>
+          <tr>
+            <th style="text-transform: uppercase; color: #5F6062; font-size: 10pt;" align="right">Name</th>
+            <td width=""></td>
+            <td>{{ lookalike.name }}</td>
+          </tr>
+          <tr>
+            <th style="text-transform: uppercase; color: #5F6062; font-size: 10pt;" align="right">IP address</th>
+            <td width=""></td>
+            <td>{{ lookalike.ip_address }}</td>
+          </tr>
+          <tr>
+            <th style="text-transform: uppercase; color: #5F6062; font-size: 10pt;" align="right">Found</th>
+            <td width=""></td>
+            <td>{{ lookalike.found_on }}</td>
+          </tr>
+          {% if lookalike.creation_date is not none %}
+            <tr>
+              <th style="text-transform: uppercase; color: #5F6062; font-size: 10pt;" align="right">Created</th>
+              <td width=""></td>
+              <td>{{ lookalike.creation_date }}</td>
+            </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      <br>
+    {% endfor %}
+
+    <p>
+      {% if old_lookalikes %}
+        There are {{ old_lookalikes|length }} other similar domains.
+      {% endif %}
+      For more information, go to your <a href="#" style="color: #E28C05">domain monitoring dashboard</a>.
+    </p>
+
+    <br>
+    <hr style="color: #999999; background-color: #999999; height: 1px; border: none;">
+    <p style="color: #5F6062; font-size: 10pt;">
+      You are receiving this because you are subscribed to the Novacoast Domain Monitoring Service.<br>
+      <a href="#" style="color: #E28C05">Unsubscribe</a>
+    </p>
+  </div>
+</body>
+
+</html>

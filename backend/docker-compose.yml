@@ -1,0 +1,44 @@
+version: '3.7'
+
+services:
+  server:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env.development
+    depends_on:
+      - rabbitmq
+      - db
+      - scheduler-db
+
+  worker:
+    build: ./worker
+    restart: always
+    depends_on:
+      - rabbitmq
+
+  rabbitmq:
+    image: rabbitmq
+
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: dms
+      POSTGRES_PASSWORD: development_password
+
+  scheduler-db:
+    image: postgres
+    restart: always
+    volumes:
+      - scheduler_postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: scheduler
+      POSTGRES_PASSWORD: development_password
+
+volumes:
+  postgres_data:
+  scheduler_postgres_data:
